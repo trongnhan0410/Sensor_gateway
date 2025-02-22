@@ -1,6 +1,12 @@
 # Sensor Monitoring System
 
-Introduction
+Execution command:
+- make all: excute to file binary server and client
+- make clean: clean
+- /server <port>
+- /client <ip> <port>
+
+Introduction project
 
 The Sensor Monitoring System consists of multiple sensor nodes measuring room temperature and transmitting data to a central sensor gateway. The sensor gateway collects, processes, and stores the data in an SQLite database. Communication between sensor nodes and the gateway is established through a TCP connection. The system is designed to handle dynamic connections and process data efficiently using multithreading.
 
@@ -23,7 +29,8 @@ Data Manager: Analyzes sensor data, calculates average temperature, and determin
 Storage Manager: Saves sensor data to the SQLite database and handles reconnection attempts in case of failures.
 
 Log Process: Records system events in a log file through an inter-process communication mechanism.
-Minimal Requirements
+
+Minimal Requirements:
 
 Req 1
 
